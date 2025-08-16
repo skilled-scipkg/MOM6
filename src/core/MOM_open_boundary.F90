@@ -2116,17 +2116,11 @@ subroutine open_boundary_halo_update(G, OBC)
     enddo
   endif
   if (allocated(OBC%h_res_x) .and. allocated(OBC%h_res_y)) then
-    do m=1,OBC%ntr
-      call pass_vector(OBC%h_res_x(:,:,:), OBC%h_res_y(:,:,:), G%Domain, To_All+Scalar_Pair)
-    enddo
+    call pass_vector(OBC%h_res_x(:,:,:), OBC%h_res_y(:,:,:), G%Domain, To_All+Scalar_Pair)
   elseif (allocated(OBC%h_res_x)) then
-    do m=1,OBC%ntr
-      call pass_var(OBC%h_res_x(:,:,:), G%Domain, position=EAST_FACE)
-    enddo
+    call pass_var(OBC%h_res_x(:,:,:), G%Domain, position=EAST_FACE)
   elseif (allocated(OBC%h_res_y)) then
-    do m=1,OBC%ntr
-      call pass_var(OBC%h_res_y(:,:,:), G%Domain, position=NORTH_FACE)
-    enddo
+    call pass_var(OBC%h_res_y(:,:,:), G%Domain, position=NORTH_FACE)
   endif
 
 end subroutine open_boundary_halo_update
@@ -2442,8 +2436,8 @@ subroutine setup_OBC_thickness_reservoirs(G, GV, OBC, restart_CS)
 
   ! Local variables
   type(OBC_segment_type), pointer :: segment => NULL()
-  real :: I_scale         ! The inverse of the scaling factor for the tracers.
-                          ! For salinity the units would be [ppt S-1 ~> 1]
+  real :: I_scale         ! The inverse of the scaling factor for the thicknesses.
+                          ! [m Z-1 ~> 1]
   logical :: set_h_res_x, set_h_res_y
   character(len=12) :: x_var_name, y_var_name
   integer :: i, j, k, n
