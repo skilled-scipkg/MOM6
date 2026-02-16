@@ -1,0 +1,101 @@
+{
+  "compiled_package_id": "mom6",
+  "evidence": {
+    "core_skills": [
+      "mom6-api-and-scripting",
+      "mom6-details",
+      "mom6-theory-and-methods",
+      "mom6-zzbibliography",
+      "mom6-working-with-mom6",
+      "mom6-tracers"
+    ],
+    "evidence_dir": "skills/.evidence",
+    "files": [
+      "skills/.evidence/mom6-api-and-scripting.md",
+      "skills/.evidence/mom6-details.md",
+      "skills/.evidence/mom6-theory-and-methods.md",
+      "skills/.evidence/mom6-zzbibliography.md",
+      "skills/.evidence/mom6-working-with-mom6.md",
+      "skills/.evidence/mom6-tracers.md"
+    ]
+  },
+  "generation": {
+    "docs_only": false,
+    "generator_script": "sci-skills-generator/scripts/generate_skills_folder.py",
+    "max_skills": 30,
+    "return_code": 0,
+    "status": "ok"
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "return_code": 0,
+      "status": "ok"
+    },
+    {
+      "pass": 2,
+      "return_code": 0,
+      "status": "ok"
+    },
+    {
+      "pass": 3,
+      "return_code": 0,
+      "status": "ok"
+    }
+  ],
+  "profile": {
+    "docs_dirs": [
+      "docs"
+    ],
+    "docs_only": false,
+    "notes": [
+      "Primary tutorials/examples are linked externally via the MOM6-examples wiki.",
+      "The in-repo verification suite lives under .testing.",
+      "Additional executable tests live under config_src/drivers/*_tests."
+    ],
+    "package_name": "MOM6",
+    "profile_path": "skills/.compile_profile.json",
+    "profile_source": "file",
+    "source_dirs": [
+      "config_src",
+      "pkg",
+      "src"
+    ],
+    "test_dirs": [
+      ".testing",
+      "config_src/drivers/timing_tests",
+      "config_src/drivers/unit_tests",
+      "src/framework/testing"
+    ],
+    "tutorial_dirs": [],
+    "warnings": []
+  },
+  "project_root": "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/mom6-mom6",
+  "validation": {
+    "core_skills_checked": [
+      "mom6-advanced-topics",
+      "mom6-api-and-scripting",
+      "mom6-details",
+      "mom6-zzbibliography",
+      "mom6-working-with-mom6",
+      "mom6-theory-and-methods"
+    ],
+    "docs_only": false,
+    "errors": [
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/mom6-mom6/skills/mom6-advanced-topics/SKILL.md: missing `## High-Signal Playbook` section.",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/mom6-mom6/skills/mom6-api-and-scripting/SKILL.md: playbook missing required element containing 'convergence/validation'.",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/mom6-mom6/skills/mom6-details/SKILL.md: playbook missing required element containing 'convergence/validation'.",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/mom6-mom6/skills/mom6-zzbibliography/SKILL.md: playbook missing required element containing 'convergence/validation'.",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/mom6-mom6/skills/mom6-working-with-mom6/SKILL.md: playbook missing required element containing 'convergence/validation'.",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/mom6-mom6/skills/mom6-theory-and-methods/SKILL.md: playbook missing required element containing 'convergence/validation'."
+    ],
+    "index_skills": [
+      "mom6-index"
+    ],
+    "ok": false,
+    "skills_total": 8,
+    "source_links_total": 82,
+    "topic_skills": 7,
+    "warnings": []
+  }
+}

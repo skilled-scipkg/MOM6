@@ -1,0 +1,19 @@
+{
+  "core_skills": [
+    "mom6-api-and-scripting",
+    "mom6-details",
+    "mom6-theory-and-methods",
+    "mom6-zzbibliography",
+    "mom6-working-with-mom6",
+    "mom6-tracers"
+  ],
+  "evidence_dir": "skills/.evidence",
+  "files": [
+    "skills/.evidence/mom6-api-and-scripting.md",
+    "skills/.evidence/mom6-details.md",
+    "skills/.evidence/mom6-theory-and-methods.md",
+    "skills/.evidence/mom6-zzbibliography.md",
+    "skills/.evidence/mom6-working-with-mom6.md",
+    "skills/.evidence/mom6-tracers.md"
+  ]
+}
